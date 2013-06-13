@@ -4,22 +4,12 @@
         <meta charset="utf-8">
         <title>Analysis</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="/assets/css/vender/unsemantic/unsemantic-grid-responsive.css" />
-        <link rel="stylesheet" href="/assets/css/main.css" />
+        <!-- load by requirejs plugin, requireCSS -->
         <!-- JS -->
-        <script src="/assets/js/vender/jquery-1.7.2.min.js"></script>
-        <script src="/assets/js/vender/underscore-min.js"></script>
-        <script src="/assets/js/vender/backbone-min.js"></script>
-        <script src="/assets/js/vender/backbone-mvc.js"></script>
-        <script src="/assets/js/main.js"></script>
+        <script data-main="assets/js/main.js" src="assets/js/vender/require.js"></script>
     </head>
     <body>
-        <div id="left-page-header" class="grid-10">
-            <div id="logo">
-                LOGO
-            </div>
-        </div>
-        <div id="right-page-header" class="grid-90">
+        <div id="page-header" class="grid-100">
             <div id="menu">
                 MENU
             </div>
@@ -28,6 +18,7 @@
             <div id="content">
                 CONTENT
                 <a href="#ctrl1/hello">#ctrl1/hello</a>
+                <a href="#ctrl1/helloInChinese">#ctrl1/helloInChinese</a>
             </div>
             <div id="filters">
                 FILTER

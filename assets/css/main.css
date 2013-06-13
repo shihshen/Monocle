@@ -18,8 +18,3 @@ body, td, a, p {
     display: inline-block;
     width: 50px;
 }
-
-.body {
-    background: url("../img/notebook.png") repeat;
-}
-
