@@ -1,20 +1,28 @@
 {
-    'place-holders': [{
-        'id': 'tabs-holder',
-        'class': 'grid-5',
-        'modules': [{
-            'id': 'app-menu',
-            'module-controller': 'menuCtrl'
-        }]
-    }, {
-        'id': 'body-holder',
-        'class': 'grid-95',
-        'modules': [{
-            'id': 'app-content',
-            'module-controller': 'contentCtrl'
-        }, {
-            'id': 'app-filter',
-            'module-controller': 'filterCtrl'
-        }]
-    }]
+  "place-holders": [
+    {
+      "id": "tabs-holder",
+      "class": "grid-5",
+      "modules": [
+        {
+          "id": "app-menu",
+          "module-controller": "menuCtrl"
+        }
+      ]
+    },
+    {
+      "id": "body-holder",
+      "class": "grid-95",
+      "modules": [
+        {
+          "id": "app-content",
+          "module-controller": "contentCtrl"
+        },
+        {
+          "id": "app-filter",
+          "module-controller": "filterCtrl"
+        }
+      ]
+    }
+  ]
 }
