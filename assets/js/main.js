@@ -23,7 +23,7 @@ requirejs.config({
     }
 });
 
-// Page layout is set up in index.html due to this is only for one page app, so I don't create configuration for this.
+// Page layout is set up in index.html due to this is only for one page app, so I don't create configuration for that.
 // Just invoke controllers to create whole app.
 require(['domReady', 'jquery', 'underscore', 'backbone', 'backbone-mvc', 'css!../css/vender/unsemantic-grid-responsive.css', 'css!../css/main.css'], function() {
     var Controller1 = BackboneMVC.Controller.extend({
