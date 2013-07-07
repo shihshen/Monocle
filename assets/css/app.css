@@ -2,8 +2,8 @@ body, td, a, p {
     font: 13px/27px Arial, sans-serif;
 }
 
-.menu {
-    background-color: #2d2d2d;
+#app-menu {
+    background-color: #ececec;
     background-image: none;
     color: #bbb;
     height: 24px;

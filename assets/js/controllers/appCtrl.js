@@ -1,6 +1,6 @@
 define(['jquery', 'underscore', 'backbone', 'backbone-mvc', 'css!../../css/unsemantic-grid-responsive.css', 'css!../../css/app.css'], function() {
-    var appCtrl = BackboneMVC.Controller.extend({
-        name: 'ctrl1',
+    var AppCtrl = BackboneMVC.Controller.extend({
+        name: 'AppCtrl',
         /* the only mandatory field */
 
         /**
@@ -24,4 +24,5 @@ define(['jquery', 'underscore', 'backbone', 'backbone-mvc', 'css!../../css/unsem
             console.log('你好世界!');
         }
     });
+    return AppCtrl;
 });

@@ -23,10 +23,9 @@ requirejs.config({
     }
 });
 
-// Just invoke controllers to create whole app.
-require(['domReady', 'controllers/appCtrl'], function() {
-    'use strict';
+require(['domReady', 'controllers/AppCtrl'], function(domReady, AppCtrl) {
+    // Just invoke controllers to create whole app.
     var router = new BackboneMVC.Router(); //Start the new automatic router
     Backbone.history.start(); //We still call Backbone's default component here
-    new appCtrl();
+    var appCtrl = new AppCtrl();
 });

@@ -6,7 +6,7 @@
       "modules": [
         {
           "id": "app-menu",
-          "module-controller": "menuCtrl"
+          "module-controller": "MenuCtrl"
         }
       ]
     },
@@ -16,11 +16,11 @@
       "modules": [
         {
           "id": "app-content",
-          "module-controller": "contentCtrl"
+          "module-controller": "ContentCtrl"
         },
         {
           "id": "app-filter",
-          "module-controller": "filterCtrl"
+          "module-controller": "FilterCtrl"
         }
       ]
     }
