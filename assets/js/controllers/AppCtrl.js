@@ -3,6 +3,14 @@ define(['jquery', 'underscore', 'backbone', 'backbone-mvc', 'css!../../css/unsem
         name: 'AppCtrl',
         /* the only mandatory field */
 
+        initialize: function() {
+            $.ajax({
+                url: 'conf/layout.json'
+            }).done(function(data) {
+                var layout = JSON.parse(data);
+            });
+        },
+
         /**
          * This is a standard action method, it is invoked
          * automatically if url matches
