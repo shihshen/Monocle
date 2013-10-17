@@ -2,7 +2,7 @@
   "place-holders": [
     {
       "id": "tabs-holder",
-      "class": "grid-100",
+      "class": "grid-5",
       "modules": [
         {
           "id": "app-menu",

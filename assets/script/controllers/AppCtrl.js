@@ -1,13 +1,32 @@
-define(['jquery', 'underscore', 'backbone', 'backbone-mvc', 'css!../../css/unsemantic-grid-responsive.css', 'css!../../css/app.css'], function() {
+/**
+ * AppCtrl load configurations, and then create appView, appModel instance to initalize basic layout for the views of the modules and create every controller instance.
+ *
+ * Usage: var appCtrl = new AppCtrl();
+ * @return {object}
+ */
+
+define(['backbone', 'backbone-mvc', 'script/views/AppView'], function() {
     var AppCtrl = BackboneMVC.Controller.extend({
         name: 'AppCtrl',
         /* the only mandatory field */
 
-        initialize: function() {
+        constructor: function() {
             $.ajax({
                 url: 'conf/layout.json'
             }).done(function(data) {
+                // Load config.
                 var layout = JSON.parse(data);
+                var AppModel = Backbone.Model.extend(layout);
+                var appModel = new AppModel();
+                var appView = new AppView({
+                    model: appModel,
+                    el: $('body')
+                });
+                //appView.render();
+
+                // Create views for every module.
+
+
             });
         },
 
