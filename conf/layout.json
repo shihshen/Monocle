@@ -1,8 +1,8 @@
 {
   "place-holders": [
     {
-      "id": "tabs-holder",
-      "class": "grid-5",
+      "id": "header-holder",
+      "class": "grid-100",
       "modules": [
         {
           "id": "app-menu",
@@ -12,7 +12,7 @@
     },
     {
       "id": "body-holder",
-      "class": "grid-95",
+      "class": "grid-100",
       "modules": [
         {
           "id": "app-content",
