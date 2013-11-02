@@ -4,9 +4,11 @@
  * @return {object}
  */
 
-define(['backbone', 'css!style/unsemantic-grid-responsive.css', 'css!style/app.css'], function() {
+define(['backbone', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function() {
     var AppView = Backbone.View.extend({
-        constructor: function() {
+        initialize: function(){},
+        render: function() {
+                    console.log('AppView is rendering.');
         }
     });
     return AppView;
