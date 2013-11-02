@@ -11,7 +11,7 @@ requirejs.config({
         // Plugins
         'jquery': 'js/lib/jquery-1.7.2.min',
         'underscore': 'js/lib/underscore-min',
-        'backbone': 'js/lib/backbone',
+        'backbone': 'js/lib/backbone-min',
         'backbone-mvc': 'js/lib/backbone-mvc',
         'css': 'js/lib/css',
         'hbs': 'js/lib/hbs'
