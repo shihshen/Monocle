@@ -8,15 +8,12 @@ requirejs.config({
     //never includes a ".js" extension since
     //the paths config could be for a directory.
     paths: {
-        // domReady plugin
-        'domReady': 'js/lib/domReady',
+        // Plugins
         'jquery': 'js/lib/jquery-1.7.2.min',
         'underscore': 'js/lib/underscore-min',
         'backbone': 'js/lib/backbone',
         'backbone-mvc': 'js/lib/backbone-mvc',
-        // CSS plugin
         'css': 'js/lib/css',
-        // HandleBar plugin
         'hbs': 'js/lib/hbs'
     },
     shim: {
@@ -25,11 +22,13 @@ requirejs.config({
     }
 });
 
-require(['domReady', 'backbone', 'backbone-mvc', 'js/controllers/AppCtrl'], function(domReady, _Backbone, _BackboneMVC, AppCtrl) {
+require(['backbone', 'backbone-mvc', 'js/controllers/AppCtrl'], function(_Backbone, _BackboneMVC, AppCtrl) {
+    $(document).ready(function() {
     // Just invoke controllers to create whole app.
     //Start the new automatic router.
     var router = new BackboneMVC.Router();
     //We still call Backbone's default component here
     Backbone.history.start();
     var appCtrl = new AppCtrl();
+    });
 });
