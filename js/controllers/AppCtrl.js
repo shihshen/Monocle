@@ -5,7 +5,7 @@
  * @return {object}
  */
 
-define(['backbone-mvc', 'js/views/AppView', 'js/models/AppModel'], function(_BackboneMVC, AppView, AppModel) {
+define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(BackboneMVC, AppModel, AppView) {
     var AppCtrl = BackboneMVC.Controller.extend({
         name: 'AppCtrl',
         /* the only mandatory field */
@@ -14,9 +14,7 @@ define(['backbone-mvc', 'js/views/AppView', 'js/models/AppModel'], function(_Bac
             $.ajax({
                 url: 'conf/layout.json'
             }).done(function(data) {
-                // Load config.
                 var layout = JSON.parse(data);
-
                 var appModel = new AppModel(layout);
                 var appView = new AppView({
                     model: appModel,

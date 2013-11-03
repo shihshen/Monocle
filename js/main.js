@@ -1,7 +1,7 @@
 // Set up module management
 requirejs.config({
     //By default load any component from assets
-    baseUrl: 'assets',
+    baseUrl: '/',
     //except, if the component starts with "app",
     //load it from the js/app directory. paths
     //config is relative to the baseUrl, and
@@ -17,12 +17,31 @@ requirejs.config({
         'css': 'js/lib/css'
     },
     shim: {
-        'backbone': ['jquery', 'underscore'],
-        'backbone-mvc': ['jquery', 'underscore', 'backbone']
+        'underscore': {
+            exports: '_'
+        },
+        'jquery': {
+            exports: '$'
+        },
+        'backbone': {
+            deps: ['underscore', 'jquery'],
+            exports: 'Backbone'
+        },
+        'backbone-mvc': {
+            deps: ['backbone'],
+            exports: 'BackboneMVC'
+        },
+        'handlebars': {
+            exports: 'Handlebars'
+        },
+        // shim config doesn't support 'templates/*', so please add all precompile templates here currently.
+        'templates/layout': {
+            deps: ['handlebars']
+        }
     }
 });
 
-require(['backbone', 'backbone-mvc', 'js/controllers/AppCtrl'], function(_Backbone, _BackboneMVC, AppCtrl) {
+require(['backbone', 'backbone-mvc', 'js/controllers/AppCtrl'], function(Backbone, BackboneMVC, AppCtrl) {
     $(document).ready(function() {
         // Start the new automatic router and Backbone.history.
         var router = new BackboneMVC.Router();

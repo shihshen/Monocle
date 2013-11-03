@@ -4,7 +4,7 @@
  * @return {object}
  */
 
-define(['backbone', 'handlebars', 'templates/layout', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function() {
+define(['backbone', 'handlebars', 'templates/layout', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function(Backbone, Handlebars) {
     var AppView = Backbone.View.extend({
         template: Handlebars.templates.layout,
         render: function() {
