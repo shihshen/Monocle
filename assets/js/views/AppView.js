@@ -4,11 +4,12 @@
  * @return {object}
  */
 
-define(['backbone', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function() {
+define(['backbone', 'handlebars', 'templates/layout', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function() {
     var AppView = Backbone.View.extend({
-        initialize: function(){},
+        template: Handlebars.templates.layout,
         render: function() {
-                    console.log('AppView is rendering.');
+            this.$el.html(this.template(this.model.attributes));
+            return this;
         }
     });
     return AppView;

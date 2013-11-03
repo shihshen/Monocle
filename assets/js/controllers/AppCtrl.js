@@ -11,7 +11,6 @@ define(['backbone-mvc', 'js/views/AppView', 'js/models/AppModel'], function(_Bac
         /* the only mandatory field */
 
         initialize: function() {
-            console.log('AppCtrl is initializing.');
             $.ajax({
                 url: 'conf/layout.json'
             }).done(function(data) {
@@ -25,8 +24,7 @@ define(['backbone-mvc', 'js/views/AppView', 'js/models/AppModel'], function(_Bac
                 });
                 appView.render();
 
-                // Create views for every module.
-
+                // Create controllers for every module.
 
             });
         },
