@@ -1,51 +1,39 @@
 /**
- * AppCtrl load configurations, and then create appView, appModel and every controller instance.
+ * AppCtrl
+ * Collect configuration and create mvc cells for all modules.
  *
- * Usage: var appCtrl = new AppCtrl();
  * @return {object}
  */
 
-define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(BackboneMVC, AppModel, AppView) {
+define(['backbone-mvc', 'js/models/AppModel'], function(BackboneMVC, AppModel) {
     var AppCtrl = BackboneMVC.Controller.extend({
         name: 'AppCtrl',
         /* the only mandatory field */
 
+        model: {}, // Store layout and modules
+
         initialize: function() {
-            $.ajax({
-                url: 'conf/layout.json'
-            }).done(function(data) {
-                var layout = JSON.parse(data);
-                var appModel = new AppModel(layout);
-                var appView = new AppView({
-                    model: appModel,
-                    el: $('body')
-                });
-                appView.render();
+            var layout = {placeHolders:[]};
+            // Collect info. from basic html layout.
+            var divsOnLayout = $('body').children();
+            for(var i = 0; i < divsOnLayout.length; i++) {
+                layout.placeHolders.push({id: divsOnLayout.eq(i).attr('id'), modules: []});
+                var children = divsOnLayout.eq(i).children();
+                for(var j = 0; j < children.length; j++) {
+                    layout.placeHolders[i].modules.push({id: children.eq(j).attr('id'), controller: children.eq(j).attr('controller')});
+                }
+            }
 
-                // Create controllers for every module.
-
-            });
+            this.model = new AppModel(layout);
+            // Create controllers for all modules
         },
 
-        /**
-         * This is a standard action method, it is invoked
-         * automatically if url matches
-         */
         hello: function() {
-            console.log('hello world!');
+           this._privateMethod();
         },
 
-        helloInChinese: function() {
-            //you can invoke any method in this controller (including the private methods for sure)
-            this._privateMethod();
-        },
-
-        /**
-         * This function will remain untouched, the router cannot see
-         * this method
-         */
         _privateMethod: function() {
-            console.log('你好世界!');
+            console.log(this.model.attributes);
         }
     });
     return AppCtrl;

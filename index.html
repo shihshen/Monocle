@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
         <title>Analysis</title>
+        <meta charset="utf-8">
         <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="/styles/unsemantic-grid-responsive.css">
+        <link rel="stylesheet" type="text/css" href="/styles/app.css">
         <!-- load by requirejs plugin, requireCSS -->
         <!-- JS -->
         <script data-main="/js/main.js" src="/js/lib/require.js"></script>
     </head>
     <body>
         <div id="header-holder" class="grid-100">
-            <div id="app-menu">
-                <img id="pageAc" title="Title" class="pageLayoutAction" src="/images/icon-menu.png" width="24" height="24" border="0">
-            </div>
+            <div id="app-menu" controller="MenuCtrl"></div>
         </div>
         <div id="body-holder" class="grid-100">
-            <div id="app-content">
-                CONTENT - 0123456789 - 0123456789 - 0123456789
-                <a href="#AppCtrl/hello">#AppCtrl/hello</a>
-                <a href="#AppCtrl/helloInChinese">#AppCtrl/helloInChinese</a>
-            </div>
-            <div id="app-filter">
-                FILTERS
-            </div>
-        </div>
+            <div id="app-content" controller="ContentCtrl"></div>
+            <div id="app-filter" controller="FilterCtrl"></div>
+        </div> 
     </body>
 </html>

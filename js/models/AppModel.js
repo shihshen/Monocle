@@ -1,5 +1,5 @@
 /**
- * AppModel stores data for basic layout of the app.
+ * AppModel
  *
  * @return {object}
  */

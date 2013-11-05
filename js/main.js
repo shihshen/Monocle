@@ -13,7 +13,9 @@ requirejs.config({
         'backbone': 'js/lib/backbone-min',
         'backbone-mvc': 'js/lib/backbone-mvc',
         'handlebars': 'js/lib/handlebars.runtime',
+
         // Plugins
+        'text': 'js/lib/text',
         'css': 'js/lib/css'
     },
     shim: {
@@ -33,10 +35,6 @@ requirejs.config({
         },
         'handlebars': {
             exports: 'Handlebars'
-        },
-        // shim config doesn't support 'templates/*', so please add all precompile templates here currently.
-        'templates/layout': {
-            deps: ['handlebars']
         }
     }
 });
