@@ -13,6 +13,9 @@ requirejs.config({
         'backbone': 'js/lib/backbone-min',
         'backbone-mvc': 'js/lib/backbone-mvc',
         'handlebars': 'js/lib/handlebars.runtime',
+        'bootstrap': 'js/lib/bootstrap.min',
+        'loglevel': 'js/lib/loglevel.min',
+        'async': 'js/lib/async',
 
         // Plugins
         'text': 'js/lib/text',
@@ -35,16 +38,20 @@ requirejs.config({
         },
         'handlebars': {
             exports: 'Handlebars'
+        },
+        'bootstrap': {
+            deps: ['jquery'],
+            exports: 'Bootstrap'
         }
     }
 });
 
-require(['backbone', 'backbone-mvc', 'js/controllers/AppCtrl'], function(Backbone, BackboneMVC, AppCtrl) {
+require(['backbone', 'backbone-mvc', 'js/controllers/AppCtrl', 'bootstrap', 'css!styles/bootstrap-theme.min.css', 'css!styles/bootstrap.min.css'], function(Backbone, BackboneMVC, AppCtrl) {
     $(document).ready(function() {
         // Start the new automatic router and Backbone.history.
         var router = new BackboneMVC.Router();
         Backbone.history.start();
         // Just invoke controllers to create whole app.
-        var appCtrl = new AppCtrl();
+        new AppCtrl();
     });
 });
