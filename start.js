@@ -9,7 +9,7 @@ chrome.app.runtime.onLaunched.addListener(function() {
     var height = screenHeight;
 
     chrome.app.window.create('index.html', {
-        width: width/2,
+        width: width,
         height: height,
         left: ((screenWidth - width) / 2) + width / 2,
         top: (screenHeight - height) / 2
