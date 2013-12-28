@@ -16,15 +16,11 @@ define(['backbone-mvc', 'jquery', 'loglevel', 'async', 'js/models/AppModel', 'js
         initialize: function() {
             var self = this;
             log.setLevel('debug'); //TODO: remember to remove this line after fininshing developing.
-            $.ajax('/misc/appConfig.json')
+            $.ajax({
+                url: '/misc/appConfig.json',
+                dataType: 'json'
+            })
                 .done(function(config) {
-                    if(typeof config === 'string') {
-                        try {
-                            config = JSON.parse(config);
-                        } catch(e) {
-                            log.error('AppCtrl::initialize() fail to load appConfig');
-                        }
-                    }
                     log.info('AppCtrl::initialize() config: ');
                     log.info(config);
                     self.model = new AppModel(config);
@@ -67,14 +63,6 @@ define(['backbone-mvc', 'jquery', 'loglevel', 'async', 'js/models/AppModel', 'js
                         }
                     );
                 });
-        },
-
-        hello: function() {
-           this._privateMethod();
-        },
-
-        _privateMethod: function() {
-            console.log(this.model.attributes);
         }
     });
     return AppCtrl;

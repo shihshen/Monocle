@@ -1,6 +1,8 @@
 /**
  * AppView
  *
+ * Render basic layout for modules.
+ *
  * @return {object}
  */
 

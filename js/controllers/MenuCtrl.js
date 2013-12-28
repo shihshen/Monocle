@@ -4,15 +4,18 @@
  * @return {object}
  */
 
-define(['backbone-mvc', 'jquery', 'loglevel'], function(BackboneMVC, $, log) {
+define(['backbone-mvc', 'jquery', 'loglevel', 'js/views/MenuView'], function(BackboneMVC, $, log, MenuView) {
     var MenuCtrl = BackboneMVC.Controller.extend({
         name: 'MenuCtrl',
         /* the only mandatory field */
 
-        model: {}, // Store layout, modules and controllers
         view : {}, // Render layout
 
-        initialize: function() {
+        initialize: function(domId) {
+            self.view = new MenuView({
+                el: $('#'+domId)
+            });
+            self.view.render();
         }
     });
     return MenuCtrl;

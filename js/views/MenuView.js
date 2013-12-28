@@ -5,10 +5,10 @@
  */
 
 define(['backbone', 'templates/menu', 'css!styles/menu.css'], function(Backbone, Templates) {
-    var AppView = Backbone.View.extend({
-        template: Templates.kicks,
+    var MenuView = Backbone.View.extend({
+        template: Templates.menu,
         render: function() {
-            this.$el.html(this.template(this.model.attributes));
+            this.$el.html(this.template(this.model));
             return this;
         }
     });
