@@ -1,4 +1,4 @@
-Analysis
+Monocle
 ========
 
-This is meant to be a assistant for analyzing logs.
+This is meant to be a tool for analyzing logs.
