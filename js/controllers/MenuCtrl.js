@@ -12,6 +12,7 @@ define(['backbone-mvc', 'jquery', 'loglevel', 'js/views/MenuView'], function(Bac
         view : {}, // Render layout
 
         initialize: function(domId) {
+            var self = this;
             self.view = new MenuView({
                 el: $('#'+domId)
             });
