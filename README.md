@@ -4,12 +4,15 @@ Monocle
 This is meant to be a tool for analyzing logs.
 
 Please use [Monocle-dev] to develop.
+
 Here is the [online version].
 
 > Inspired by [TextAnalysisTool.NET].
+>
 > Monocle - a text analysis tool which is implemented as a chrome app to support multiple platform.
 >
 > Copyright (c) 2014 Powpow Shen (http://powpowsfantasy.wordpress.com/)
+>
 > Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
 
 [Monocle-dev]: https://github.com/Powpow-Shen/Monocle-dev/
