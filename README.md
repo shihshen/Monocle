@@ -1,7 +1,7 @@
 Monocle
 ========
 
-A cross platform log analyzing tool which prvoides an chrome offline app and online service.
+A cross platform text analyzing tool which prvoides an chrome offline app and web-based online service.
 
  - Here is the [online service].
 
