@@ -11,7 +11,7 @@ Please use [Monocle-online] to develop.
 
 > Inspired by [TextAnalysisTool.NET].
 >
-> Monocle - a text analysis tool which is implemented as a chrome app to support multiple platform.
+> Monocle - A cross platform text analyzing tool which prvoides an chrome offline app and web-based online service.
 >
 > Copyright (c) 2014 Powpow Shen (http://powpowsfantasy.wordpress.com/)
 >
