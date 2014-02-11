@@ -1,7 +1,7 @@
 Monocle
 ========
 
-This is meant to be a tool (chrome app) for analyzing logs.
+A cross platform log analyzing tool which prvoides an chrome offline app and online service.
 
 Please use [Monocle-online] to develop.
 
@@ -17,4 +17,4 @@ Here is the [online version].
 
 [Monocle-online]: https://github.com/Powpow-Shen/Monocle-online/
 [TextAnalysisTool.NET]: http://blogs.msdn.com/b/delay/archive/2007/06/21/powerful-log-file-analysis-for-everyone-releasing-textanalysistool-net.aspx
-[online version]: http://monocle.aws.af.cm/
+[online version]: http://powpow-shen.github.io/Monocle-online/
