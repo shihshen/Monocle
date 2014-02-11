@@ -3,9 +3,9 @@ Monocle
 
 A cross platform log analyzing tool which prvoides an chrome offline app and online service.
 
-Please use [Monocle-online] to develop.
-
 Here is the [online version].
+
+Please use [Monocle-online] to develop.
 
 > Inspired by [TextAnalysisTool.NET].
 >
