@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
   "name": "Monocle",
-  "version": "1",
-  "minimum_chrome_version": "23",
+  "version": "1.0",
+  "description": "A cross platform text analyzing tool which prvoides an chrome offline app and web-based online service.",
+  "permissions": [
+    "tabs"
+  ],
   "icons": {
     "16": "icon_16.png",
     "128": "icon_128.png"
   },
-  "app": {
-    "background": {
-      "scripts": ["start.js"]
-    }
+  "browser_action": {
+    "default_icon": "icon_32.png"
+  },
+  "background": {
+    "scripts": ["start.js"]
   }
 }
