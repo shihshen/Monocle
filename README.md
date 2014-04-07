@@ -1,17 +1,17 @@
 Monocle
 ========
 
-A cross platform text analyzing tool which prvoides an chrome offline app and web-based online service.
+A cross platform text analyzing tool which prvoides an chrome offline extension and web-based online service.
 
  - Here is the [online service].
 
- - The chrome offline app is not ready yet.
+ - The chrome offline extension is not ready yet.
 
 Please use [Monocle-online] to develop.
 
 > Inspired by [TextAnalysisTool.NET].
 >
-> Monocle - A cross platform text analyzing tool which prvoides an chrome offline app and web-based online service.
+> Monocle - A cross platform text analyzing tool which prvoides an chrome offline extension and web-based online service.
 >
 > Copyright (c) 2014 Powpow Shen (http://powpowsfantasy.wordpress.com/)
 >
