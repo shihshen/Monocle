@@ -1,0 +1,22 @@
+.logs {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.single-log {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background-color: #ffffff;
+}
+
+.drop-message {
+  border: 2px dashed #bbb;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 25px;
+  text-align: center;
+  color: #bbb;
+  height: 1000px;
+}

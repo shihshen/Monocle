@@ -1,0 +1,41 @@
+<div class="panel panel-default panel-filters">
+    <div id="color-picker-container"></div>
+    <div class="panel-heading">
+        <div class="panel-title">
+            <a id="toggle-filters" href="#all-filters" data-toggle="collapse">
+                <span id="toggle-arrow" class="glyphicon glyphicon-collapse-down"></span>
+            </a>
+        </div>
+        <a title="Add a filter" class="filter-menu" href="##"><span data-toggle="collapse" data-target="#add-filter" class="glyphicon glyphicon-plus-sign"></span> </a>
+        <a id="import-filter" title="Import Filters" class="filter-menu" href="##"><span class="glyphicon glyphicon-import"></span> </a>
+        <input type="file" id="select-file" class="hidden"/>
+        <a title="Export Filters" class="filter-menu" href="#FiltersCtrl/exportFilters"><span class="glyphicon glyphicon-export"></span> </a>
+        <a id="filtered-only" class="pull-right cursor-pointer"><span class="glyphicon {{#if state.showOnlyFilteredLines}}glyphicon-check{{else}}glyphicon-unchecked{{/if}}"></span> Show Only Filtered Lines</a>
+    </div>
+    <div id="all-filters" class="list-group panel-body collapse in scrollable">
+        <form id="add-filter" class="collapse">
+            <div class="input-group">
+                <span class="input-group-addon">Matches:</span>
+                <input type="text" class="form-control" placeholder="String">
+                <span class="input-group-addon">
+                    <input type="checkbox">case sensitive
+                </span>
+                <span class="input-group-addon">
+                    <input id="color-picker" name="color-picker" type="text" value="#333399" />
+                </span>
+                <input class="btn btn-default pressable" type="submit" value="Add">
+                <button id="cancel-add" class="btn btn-default pressable" type="button"><span class="glyphicon glyphicon-remove"></span> </button>
+            </div>
+        </form>
+        {{#each data}}
+        <a id="filter-{{@index}}" class="filter list-group-item movable">
+            <span class="glyphicon {{#if enable}}glyphicon-check{{else}}glyphicon-unchecked{{/if}}"></span>
+            <span style="color:{{color}};">Matches "{{matchesString}}"{{#if caseSensitive}} ( case sensitive ){{/if}}{{#if enable}} ( {{matches}} / {{total}} ){{/if}}</span>
+            <span class="pull-right">
+                {{!<span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;}}
+                <span id="remove-filter-{{@index}}" class="glyphicon glyphicon-remove-circle remove-filter"></span>
+            </span>
+        </a>
+        {{/each}}
+    </div>
+</div>

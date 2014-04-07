@@ -1,17 +1,6 @@
 {
   "placeHolders": [
     {
-      "id": "header",
-      "class": "col-md-12",
-      "modules": [
-        {
-          "id": "app-menu",
-          "class": "col-md-12",
-          "controller": "MenuCtrl"
-        }
-      ]
-    },
-    {
       "id": "body",
       "class": "col-md-12",
       "modules": [
@@ -23,7 +12,7 @@
         {
           "id": "app-filter",
           "class": "col-md-12",
-          "controller": "FilterCtrl"
+          "controller": "FiltersCtrl"
         }
       ]
     }

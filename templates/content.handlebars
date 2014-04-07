@@ -1,5 +1,9 @@
-<div id="content">
+<div class="logs">
+{{#each data}}
+    <pre id="{{id}}"{{#if color}} style="color:{{color}};"{{/if}} class="single-log{{#if hidden}} hidden{{/if}}">{{string}}</pre>
+{{else}}
     <div class="drop-message">
-        <h2>Drag and drop log files here.<br><br><br><br><br><br><br><br></h2>
+        <h2>Drag and drop a text file here.</h2>
     </div>
+{{/each}}
 </div>

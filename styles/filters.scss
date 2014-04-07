@@ -1,0 +1,49 @@
+$distanceBetweenItem: 5px;
+
+/** fix filters panel in the bottom */
+.panel-title {
+    display: inline-block;
+    border-right: 1px solid grey;
+    padding-right: $distanceBetweenItem;
+    margin-right: $distanceBetweenItem;
+}
+
+.panel-filters {
+    position: fixed;
+    z-index: 1030;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+/** */
+
+/** make the content in the filters panel be able to scroll, 165px is for 5 filters */
+.scrollable {
+    max-height: 165px;
+    overflow: scroll;
+}
+/** */
+
+.panel-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.list-group-item,
+.panel-heading {
+    padding-top: $distanceBetweenItem;
+    padding-bottom: $distanceBetweenItem;
+}
+
+.filter-menu {
+    margin-right: $distanceBetweenItem;
+}
+
+.pressable {
+    font-weight: bold;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+/** fix filters panel in the bottom */
+.panel-title {
+  display: inline-block;
+  border-right: 1px solid grey;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.panel-filters {
+  position: fixed;
+  z-index: 1030;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/** */
+/** make the content in the filters panel be able to scroll, 165px is for 5 filters */
+.scrollable {
+  max-height: 165px;
+  overflow: scroll;
+}
+
+/** */
+.panel-body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.list-group-item,
+.panel-heading {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.filter-menu {
+  margin-right: 5px;
+}
+
+.pressable {
+  font-weight: bold;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

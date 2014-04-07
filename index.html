@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Monocle</title>
+
+<head>
+    <title>Monocle : A Text Analyzer</title>
     <meta charset="utf-8">
     <!-- JS & CSS-->
-    <script data-main="/js/main.js" src="/js/lib/require.js"></script>
-  </head>
-  <body>
-  </body>
+    <script>
+        var releaseVersion = '0.0.7',
+            require = {
+                urlArgs: 'v=' + releaseVersion
+            };
+    </script>
+    <script data-main="js/main.js" src="js/libs/require.js"></script>
+</head>
+
+<body>
+    <img src="images/loading.gif" height="48" width="48" style="position: absolute; top: 50%; left: 50%;">
+</body>
+
 </html>
