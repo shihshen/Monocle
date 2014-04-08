@@ -5,7 +5,7 @@ A cross platform text analyzing tool which prvoides an chrome offline extension 
 
  - Here is the [online service].
 
- - The chrome offline extension is not ready yet.
+ - Here is the [chrome offline extension].
 
 Please use [Monocle-online] to develop.
 
@@ -20,3 +20,4 @@ Please use [Monocle-online] to develop.
 [Monocle-online]: https://github.com/Powpow-Shen/Monocle-online/
 [TextAnalysisTool.NET]: http://blogs.msdn.com/b/delay/archive/2007/06/21/powerful-log-file-analysis-for-everyone-releasing-textanalysistool-net.aspx
 [online service]: http://powpow-shen.github.io/Monocle-online/
+[chrome offline extension]: https://chrome.google.com/webstore/detail/monocle/jfkmdokenohpbpmabdgpehbdglfgphnm?utm_source=chrome-ntp-icon
