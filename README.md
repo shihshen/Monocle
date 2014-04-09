@@ -18,6 +18,6 @@ Please use [Monocle-online] to develop.
 > Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
 
 [Monocle-online]: https://github.com/Powpow-Shen/Monocle-online/
-[TextAnalysisTool.NET]: http://blogs.msdn.com/b/delay/archive/2007/06/21/powerful-log-file-analysis-for-everyone-releasing-textanalysistool-net.aspx
+[TextAnalysisTool.NET]: http://dlaa.me/TextAnalysisTool/ 
 [online service]: http://powpow-shen.github.io/Monocle-online/
 [chrome offline extension]: https://chrome.google.com/webstore/detail/monocle/jfkmdokenohpbpmabdgpehbdglfgphnm?utm_source=chrome-ntp-icon
