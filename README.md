@@ -1,7 +1,7 @@
 Monocle
 ========
 
-A text analyzing tool which prvoides an chrome offline extension and web-based online service to help you analyze logs/text.
+A text analyzing tool which provides an chrome offline extension and web-based online service to help you analyze logs/text.
 
  - Here is the [online service].
 
