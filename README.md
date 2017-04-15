@@ -19,5 +19,5 @@ Please use [Monocle-online] to develop.
 
 [Monocle-online]: https://github.com/Powpow-Shen/Monocle-online/
 [TextAnalysisTool.NET]: http://dlaa.me/TextAnalysisTool/ 
-[online service]: http://powpow-shen.github.io/Monocle-online/
+[online service]: http://powpowshen.github.io/Monocle-online/
 [chrome offline extension]: https://chrome.google.com/webstore/detail/monocle/jfkmdokenohpbpmabdgpehbdglfgphnm?utm_source=chrome-ntp-icon
