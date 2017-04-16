@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Monocle",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A text analyzing tool which prvoides an chrome offline extension and web-based online service to help you analyze logs/text.",
   "permissions": [
     "tabs"
