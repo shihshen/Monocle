@@ -8,7 +8,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += "\n    <pre id=\"";
   if (stack1 = helpers.id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
@@ -28,7 +28,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += " style=\"color:";
   if (stack1 = helpers.color) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
@@ -39,15 +39,15 @@ function program2(depth0,data) {
   }
 
 function program4(depth0,data) {
-  
-  
+
+
   return " hidden";
   }
 
 function program6(depth0,data) {
-  
-  
-  return "\n    <div class=\"drop-message\">\n        <h2>Drag and drop a text file here.</h2>\n    </div>\n";
+
+
+  return "\n    <div class=\"greeting-message\">\n        <h2>Drag and drop a text file here.</h2>\n    </div>\n";
   }
 
   buffer += "<div class=\"logs\">\n";

@@ -6,6 +6,6 @@
  * @return {object}
  */
 define([], function() {
-    var storage = localStorage;
+    var storage = {};
     return storage;
 });

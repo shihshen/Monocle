@@ -88,14 +88,19 @@ define(['backbone', 'templates/content', 'js/libs/storage', 'css!styles/compiled
             // Only process one file once.
             if (files[0].type !== '' && !files[0].type.match('text.*')) {
                 // Create alert box.
-                this._createAlertBox('The selected file (' + files[0].name + ' - ' + files[0].type + ') should be a text.');
+                this._createAlertBox('The selected file (' + files[0].name + ' - ' + files[0].type + ') should be a text file.');
             } else {
                 window.document.title = 'Monocle : ' + files[0].name;
                 if (files[0].size > 0) {
+                    $('.greeting-message h2').text('Loading...');
                     var reader = new FileReader();
                     reader.onload = function() {
-                        storage.fileContent = this.result;
-                        window.location.replace('#ContentCtrl/loadDataFS/fileContent');
+                        try {
+                            storage.fileContent = this.result;
+                            window.location.replace('#ContentCtrl/loadDataFS/fileContent');
+                        } catch(error) {
+                            self._createAlertBox('Failed to load the file; It may be too large.');
+                        }
                     };
                     reader.readAsText(files[0]);
                 } else {
