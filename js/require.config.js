@@ -2,9 +2,7 @@
 require.config({
     //By default load any component from assets
     baseUrl: '',
-    urlArgs: function() {
-      return '?version=0.1.0';
-    },
+    urlArgs: 'version=0.1.0',
     //except, if the component starts with "app",
     //load it from the js/app directory. paths
     //config is relative to the baseUrl, and
