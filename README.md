@@ -3,7 +3,7 @@ Monocle
 
 A text analyzing tool which provides an chrome offline extension and web-based online service to help you analyze logs/text.
 
- - Here is the [online service](http://powpowshen.github.io/Monocle/).
+ - Here is the [online service](http://shihshen.github.io/Monocle/).
 
  - Here is the [chrome offline extension](https://chrome.google.com/webstore/detail/monocle/jfkmdokenohpbpmabdgpehbdglfgphnm?utm_source=chrome-ntp-icon).
 
